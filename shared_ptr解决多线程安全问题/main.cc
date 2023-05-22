@@ -1,5 +1,6 @@
 #include "foo.h"
 #include "observer.h"
+//#include "observable.h"
 
 void test_destroy(Foo* foo)
 {
