@@ -26,7 +26,6 @@ void test_observer(Observable* obj)
 {
     Observer s;
     s.observ(obj);
-    
 }
 
 int main()

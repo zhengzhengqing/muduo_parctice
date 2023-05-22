@@ -1,22 +1,31 @@
 #include "observer.h"
 
-Observer::Observer():
-    subject_(nullptr)
-{}
-
-Observer::~Observer()
+BObserver::~BObserver()
 {
     sleep(3);
+    cout <<"delete  Base" <<endl;
     subject_->unregister_(this);
 }
+
+void BObserver::observ(Observable* obj)
+{
+    obj->register_(this);
+    subject_ = obj;
+}
+
+// void Observer::observ(Observable* obj)
+// {
+//     obj->register_(this);
+//     subject_ = obj;
+// }
 
 void Observer::update()
 {
     cout << "update" <<endl;
 }
 
-void Observer::observ(Observable * obj)
+Observer::~Observer()
 {
-    obj->register_(this);
-    subject_ = obj;
+    sleep(3);
+    cout <<"delete Derived " <<endl;
 }

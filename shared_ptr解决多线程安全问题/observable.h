@@ -7,17 +7,18 @@
 #include <vector>
 #include <algorithm>
 
-class Observer;
+class BObserver;
 
 using namespace std;
 
 class Observable
 {
     private:
-        std::vector<Observer*> observers_;
+        std::mutex mutex_;
+        std::vector<BObserver*> observers_;
 
     public:
-        void register_(Observer* obj);
-        void unregister_(Observer* obj);
+        void register_(BObserver* obj);
+        void unregister_(BObserver* obj);
         void notify_observers();
 };
