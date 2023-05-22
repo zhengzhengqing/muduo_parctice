@@ -45,6 +45,7 @@ int main()
 #endif
 
 // test 2 多线程安全的Observer有多难
+// 加锁不是一个好的方法
 # if 1
     Observable * ob = new Observable;
     
