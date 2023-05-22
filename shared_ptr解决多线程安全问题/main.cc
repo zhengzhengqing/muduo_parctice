@@ -44,7 +44,7 @@ int main()
 
 #endif
 
-// test 2 现线程安全的Observer有多难
+// test 2 多线程安全的Observer有多难
 # if 1
     Observable * ob = new Observable;
     
