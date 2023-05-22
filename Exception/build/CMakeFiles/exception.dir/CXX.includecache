@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zzq/学习/study_for_good_life/Muduo_Test/Exception/exception.h
+stdio.h
+-
+iostream
+-
+cxxabi.h
+-
+execinfo.h
+-
+stdlib.h
+-
+
+/home/zzq/学习/study_for_good_life/Muduo_Test/Exception/main.cc
+functional
+-
+vector
+-
+stdio.h
+-
+exception.h
+/home/zzq/学习/study_for_good_life/Muduo_Test/Exception/exception.h
+
