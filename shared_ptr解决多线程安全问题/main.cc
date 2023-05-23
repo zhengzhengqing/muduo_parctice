@@ -133,11 +133,13 @@ int main()
     // }
     // factory->print_size();
 
-    // 测试 StockFactory 先于 Stock 对象析构,core dump
+    // 测试 StockFactory 先于 Stock 对象析构,core dump,
+    // 使用enable_shared_from_this,可以解决这个问题,
+    // 使用weak_ptr
     shared_ptr<Stock> p;
     {
-        StockFactory factory;
-        p = factory.get("google");
+        shared_ptr<StockFactory> factory(new StockFactory);
+        p = factory->get("google");
     }
     p->print();
     cout <<"StockFactory not existed" <<endl;
