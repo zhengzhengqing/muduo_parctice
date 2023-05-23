@@ -1,0 +1,1 @@
+/usr/bin/c++   -O0 -Wall -g -ggdb  -rdynamic CMakeFiles/test.dir/main.cc.o CMakeFiles/test.dir/observer.cc.o CMakeFiles/test.dir/observable.cc.o  -o test  -lpthread 

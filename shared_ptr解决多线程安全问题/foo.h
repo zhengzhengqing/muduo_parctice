@@ -37,3 +37,22 @@ class Foo
         std::mutex mutex_;
         int value_;
 };
+
+class FooTest
+{
+    public:
+        FooTest() = default;
+        explicit FooTest(int value):value_(value){}
+        ~FooTest()
+        {
+            sleep(2);
+            cout <<"FooTest delete: value = " <<value_<<endl;
+        }
+
+        void doit()
+        {
+            cout <<"do somethis before leaving" <<endl;
+        }
+
+        int value_;
+};
