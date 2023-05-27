@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zzq/学习/study_for_good_life/Muduo_Test/2线程的同步经要/main.cc
+thread
+-
+functional
+-
+request.h
+/home/zzq/学习/study_for_good_life/Muduo_Test/2线程的同步经要/request.h
+
+/home/zzq/学习/study_for_good_life/Muduo_Test/2线程的同步经要/request.h
+iostream
+-
+mutex
+-
+unistd.h
+-
+condition_variable
+-
+
